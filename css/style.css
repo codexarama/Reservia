@@ -107,7 +107,7 @@ nav a:hover, a:active {
     margin-left: 0;
 }
 
-/* comment supprimer la marge entre le champ et le bouton ? */
+/* comment supprimer la marge entre le champ et le bouton ? */ /* */
 #bouton {
      margin-left: 0;
      padding: 15px;
