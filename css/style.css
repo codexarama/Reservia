@@ -7,10 +7,24 @@ header {
     width: 90%;
     margin: auto;
 }
-
-nav {
+#navbar {
     display: flex;
     justify-content: space-between;
+}
+
+#logo {
+    align-self: flex-end;
+}
+
+#inscription {
+margin-left: 0;
+}
+
+nav {
+    flex-basis: 90%;
+    
+    /* comment justifier à droite les éléments ?*/
+    justify-self: right;
 }
 
 ul {
@@ -54,4 +68,3 @@ h2 {
 p {
 	font-size: 0.7em;
 }
-
