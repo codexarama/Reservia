@@ -52,10 +52,9 @@ header {
 margin-left: 0;
 }
 
+/* comment justifier à droite les éléments ?*/
 nav {
     flex-basis: 90%;
-
-    /* comment justifier à droite les éléments ?*/
     justify-self: right;
 }
 
@@ -79,6 +78,7 @@ nav a:hover, a:active {
   	border-top: solid #0065FC;
   	color: #0065FC;
 }
+
 /* ----------section_1_recherche----------*/
 #searchbar {
     display: inline-flex;
@@ -106,7 +106,8 @@ nav a:hover, a:active {
     padding: 15px;
     margin-left: 0;
 }
- 
+
+/* comment supprimer la marge entre le champ et le bouton ? */
 #bouton {
      margin-left: 0;
      padding: 15px;
@@ -130,14 +131,16 @@ nav a:hover, a:active {
     align-items: center;
 }
 
-#resultat p {
-    margin-right: 15px;
-}
-
+/* comment insérer un espace entre l'icone et le texte ? */
 .fa-info-circle {
     color: #0065FC;
     font-size: x-small;
 }
+
+#resultat p {
+    margin-right: 15px;
+}
+
 /* ----------footer---------- */
 footer {
     background-color: #F2F2F2;
