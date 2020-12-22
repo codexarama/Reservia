@@ -1,13 +1,44 @@
+/* ----------body---------- */
 /* polices du site */
 body {
     font-family: 'Raleway', Arial, sans-serif;
+    margin-top: 0;
     margin-bottom: 150px;
 }
 
+/* aspect des liens par defaut */
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.7em;
+}
+
+/* taille des titres */
+h1 {
+	font-size: 0.9em;
+}
+
+h2 {
+	font-size: 0.7em
+}
+
+/* taille du corps de texte */
+p {
+	font-size: 0.7em;
+}
+
+/* ----------main---------- */
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/* ----------header---------- */
 header {
     width: 90%;
     margin: auto;
 }
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -48,29 +79,66 @@ nav a:hover, a:active {
   	border-top: solid #0065FC;
   	color: #0065FC;
 }
-
-/* aspect des liens par defaut */
-a {
-	text-decoration: none;
-	color: black;
-	font-size: 0.7em;
+/* ----------section_1_recherche----------*/
+#searchbar {
+    display: inline-flex;
+    width: 600px;
+    position: relative;
+    align-items: center;
 }
 
-/* taille des titres */
-h1 {
-	font-size: 0.9em;
+.fa-map-marker-alt {
+    background-color: #F2F2F2;
+    padding: 15px;
+    font-size: x-small;
+    border: thin #F2F2F2 solid;
+    border-radius: 15px 0 0 10px;
 }
 
-h2 {
-	font-size: 0.7em
+#champ {
+    border-color: #F2F2F2;
 }
 
-/* taille du corps de texte */
-p {
-	font-size: 0.7em;
+[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    border: thin #F2F2F2 solid;
+    padding: 15px;
+    margin-left: 0;
+}
+ 
+#bouton {
+     margin-left: 0;
+     padding: 15px;
+     background-color: #0065FC;
+     color: white;
+     text-align: center;
+     border: thin #0065FC solid;
+     border-radius: 0 15px 15px 0;
 }
 
-/* proprietes du footer */
+#bouton:active {
+    background-color: black;
+}
+
+#bouton:hover {
+    box-shadow: 0 0 5px grey;
+}
+
+#resultat {
+    display: flex;
+    align-items: center;
+}
+
+#resultat p {
+    margin-right: 15px;
+}
+
+.fa-info-circle {
+    color: #0065FC;
+    font-size: x-small;
+}
+/* ----------footer---------- */
 footer {
     background-color: #F2F2F2;
     width: 100%;
