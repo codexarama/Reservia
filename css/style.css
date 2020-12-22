@@ -1,0 +1,57 @@
+/* polices du site */
+body {
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    align-content: center;
+}
+
+nav a {
+	padding: 20px 30px;
+}
+
+nav a:hover, a:active {
+  	border-top: solid #0065FC;
+  	color: #0065FC;
+}
+
+/* aspect des liens par defaut */
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.7em;
+}
+
+/* taille des titres */
+h1 {
+	font-size: 0.9em;
+}
+
+h2 {
+	font-size: 0.7em
+}
+
+/* taille du corps de texte */
+p {
+	font-size: 0.7em;
+}
+
