@@ -1,0 +1,48 @@
+map marker
+https://fontawesome.com/icons/map-marker-alt?style=solid
+
+unicode	f3c5
+solid 	<i class="fas fa-map-marker-alt"></i>
+light 	<i class="fal fa-map-marker-alt"></i>
+______________________
+
+info
+https://fontawesome.com/icons/info-circle?style=light
+
+unicode	f05a
+solid	<i class="fas fa-info-circle"></i>
+light	<i class="fal fa-info-circle"></i>
+______________________
+
+économique billet
+https://fontawesome.com/icons/money-bill-wave-alt?style=solid
+
+unicode	f53b
+solid	<i class="fas fa-money-bill-wave-alt"></i>
+light	<i class="fal fa-money-bill-wave-alt"></i>
+______________________
+
+romantique coeur
+https://fontawesome.com/icons/heart?style=solid
+
+unicode	f004
+solid	<i class="fas fa-heart"></i>
+light	<i class="fal fa-heart"></i>
+______________________
+
+animaux de compagnie chien
+https://fontawesome.com/icons/dog?style=solid
+
+unicode	f6d3
+solid	<i class="fas fa-dog"></i>
+light	<i class="fal fa-dog"></i>
+______________________
+
+étoile
+https://fontawesome.com/icons/star?style=solid
+
+unicode	f005
+solid	<i class="fas fa-star"></i>
+light	<i class="fal fa-star"></i>
+______________________
+
