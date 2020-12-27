@@ -131,6 +131,35 @@ nav a:hover, a:active {
     align-items: center;
 }
 
+#filtres {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.selection i {
+    font-size: smaller;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.selection p {
+    border: thin #F2F2F2 solid;
+    border-radius: 50px;
+    padding-right: 15px;
+}
+
 /* comment insérer un espace entre l'icone et le texte ? */
 .fa-info-circle {
     color: #0065FC;
