@@ -179,6 +179,30 @@ nav a:hover, a:active {
     margin-right: 15px;
 }
 
+/* ----------section_3_activites---------- */
+#activites {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.suggestion {
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 5px lightgrey;
+    padding-bottom: 5px;
+}
+
+.suggestion img {
+    border-radius: 20px 20px 0 0;
+}
+
+.suggestion h2 {
+    margin-left: 10px;
+}
+
 /* ----------footer---------- */
 footer {
     background-color: #F2F2F2;
