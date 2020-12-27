@@ -179,8 +179,11 @@ nav a:hover, a:active {
     margin-right: 15px;
 }
 
+/* ----------section_2_hebergements---------- */
+
+
 /* ----------section_3_activites---------- */
-#activites {
+#activites_container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -189,7 +192,7 @@ nav a:hover, a:active {
 .suggestion {
     width: 300px;
     height: fit-content;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 20px;
     box-shadow: 0 0 5px lightgrey;
     padding-bottom: 5px;
