@@ -213,10 +213,11 @@ nav a:hover, a:active {
     box-shadow: 0 0 10px grey;
 }
 
+/* comment conserver l'intégrité des proportions de chaque image ? */
 #hebergement_card img {
     width: 230px;
     height: 100px;
-    overflow: auto;
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -252,6 +253,7 @@ nav a:hover, a:active {
 
 .suggestion img {
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .suggestion h2 {
