@@ -52,10 +52,8 @@ header {
 margin-left: 0;
 }
 
-/* comment justifier à droite les éléments ?*/
 nav {
     flex-basis: 90%;
-    justify-self: right;
 }
 
 ul {
@@ -64,6 +62,7 @@ ul {
 
 nav ul {
     display: flex;
+    float: right;
 }
 
 nav li {
@@ -92,7 +91,7 @@ nav a:hover, a:active {
     padding: 15px;
     font-size: x-small;
     border: thin #F2F2F2 solid;
-    border-radius: 15px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 #champ {
@@ -131,6 +130,7 @@ nav a:hover, a:active {
     align-items: center;
 }
 
+/* comment aligner les icones au milieu ? */
 #filtres {
     display: flex;
     align-items: center;
@@ -139,8 +139,9 @@ nav a:hover, a:active {
 
 .selection {
     display: flex;
-    align-items: center;
     margin: 15px;
+    /* ne fonctionne pas */
+    vertical-align: middle;
 }
 
 .selection i {
@@ -151,6 +152,8 @@ nav a:hover, a:active {
     width: 35px;
     height: 35px;
     text-align: center;
+    /* ne foncrtionne pas */
+    vertical-align: middle;
     margin-right: 5px;
 }
 
@@ -160,10 +163,16 @@ nav a:hover, a:active {
     padding-right: 15px;
 }
 
-/* comment insérer un espace entre l'icone et le texte ? */
+.selection i:hover {
+    box-shadow: 0 0 5px grey;
+    background-color: lightgreen;
+    color: white;
+}
+
 .fa-info-circle {
     color: #0065FC;
     font-size: x-small;
+    padding-right: 5px;
 }
 
 #resultat p {
