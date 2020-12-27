@@ -3,7 +3,6 @@
 body {
     font-family: 'Raleway', Arial, sans-serif;
     margin-top: 0;
-    margin-bottom: 150px;
 }
 
 /* aspect des liens par defaut */
@@ -181,6 +180,15 @@ nav a:hover, a:active {
 
 /* ----------section_2_hebergements---------- */
 
+#hebergements_container {
+    width: 65%;
+    background-color: #F2F2F2;
+}
+
+#populaires_container {
+    width: 35%;
+    background-color: #F2F2F2;   
+}
 
 /* ----------section_3_activites---------- */
 #activites_container {
@@ -212,7 +220,7 @@ footer {
     width: 100%;
     height: 150px;
     padding: 30px 30px 40px;
-    position: fixed;
+    margin-top: 50px;
 }
 
 #footer_container {
