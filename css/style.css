@@ -139,8 +139,6 @@ nav a:hover, a:active {
 .selection {
     display: flex;
     margin: 15px;
-    /* ne fonctionne pas */
-    vertical-align: middle;
 }
 
 .selection i {
@@ -182,24 +180,29 @@ nav a:hover, a:active {
 
 #hebergements {
     display: flex;
-    /* l'espacement des 2 blocks ne fonctionne pas */
-    justify-content: space-between;
 }
 
 #hebergements_container {
-    width: 70%;
+    width: 75%;
     background-color: #F2F2F2;
     border-radius: 25px;
+    margin-right: 15px;
     padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+/* Comment répartir les cartes dans tout le container ? */
+    align-content: space-around;
 }
 
 #populaires_container {
     width: 25%;
     background-color: #F2F2F2;
     border-radius: 25px;
+    margin-left: 15px;
     padding: 25px;
 }
 
+/* Comment faire passer les cartes sous le titre ? */
 #hebergement_card {
     width: 230px;
     height: 172px;
@@ -213,7 +216,6 @@ nav a:hover, a:active {
     box-shadow: 0 0 10px grey;
 }
 
-/* comment conserver l'intégrité des proportions de chaque image ? */
 #hebergement_card img {
     width: 230px;
     height: 100px;
@@ -267,6 +269,7 @@ footer {
     height: 150px;
     padding: 30px 30px 40px;
     margin-top: 50px;
+    /*position fixe ? */
 }
 
 #footer_container {
@@ -276,9 +279,6 @@ footer {
 
 .footer_children {
     flex-basis: 30%;
-
-    /* ne fonctionne pas */
-    min-width: 200px;
 }
 
 #footer_container ul {
