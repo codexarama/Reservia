@@ -177,14 +177,13 @@ nav a:hover, a:active {
 }
 
 /* ----------section_2_hebergements---------- */
-
 #hebergements {
     display: flex;
 }
 
 #hebergements_container {
     width: 75%;
-    background-color: #F2F2F2;
+    background-color: grey;
     border-radius: 25px;
     margin-right: 15px;
     padding: 25px;
@@ -196,14 +195,14 @@ nav a:hover, a:active {
 
 #populaires_container {
     width: 25%;
-    background-color: #F2F2F2;
+    background-color: grey;
     border-radius: 25px;
     margin-left: 15px;
     padding: 25px;
 }
 
 /* Comment faire passer les cartes sous le titre ? */
-#hebergement_card {
+.hebergement_card {
     width: 230px;
     height: 172px;
     background-color: white;
@@ -212,23 +211,23 @@ nav a:hover, a:active {
     box-shadow: 0 0 10px lightgrey;
 }
 
-#hebergement_card:hover {
+.hebergement_card:hover {
     box-shadow: 0 0 10px grey;
 }
 
-#hebergement_card img {
+.hebergement_card img {
     width: 230px;
     height: 100px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-#descriptif {
+.descriptif {
     line-height: 0.5;
     padding: 0 0 15px 5px;
 }
 
-#hebergement_card i, #populaire_card i {
+.hebergement_card i, .populaire_card i {
     font-size: smaller;
     color: #0065FC;
 }
@@ -264,7 +263,7 @@ nav a:hover, a:active {
 
 /* ----------footer---------- */
 footer {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     width: 100%;
     height: 150px;
     padding: 30px 30px 40px;
