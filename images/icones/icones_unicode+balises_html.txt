@@ -50,3 +50,7 @@ solid	<i class="fas fa-star"></i>
 light	<i class="fal fa-star"></i>
 ______________________
 
+graph chart-line
+<i class="fas fa-chart-line"></i>
+
+
