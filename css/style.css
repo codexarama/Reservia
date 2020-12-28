@@ -161,9 +161,15 @@ nav a:hover, a:active {
 }
 
 .selection i:hover {
+    /* indécise
     box-shadow: 0 0 5px grey;
+    */
+    /* pertinence charte graphique ?
     background-color: lightgreen;
     color: white;
+    */
+    background-color: #0065FC;
+    color: #DEEBFF;
 }
 
 .fa-info-circle {
@@ -183,22 +189,30 @@ nav a:hover, a:active {
 
 #hebergements_container {
     width: 75%;
-    background-color: grey;
+    height: auto;
+    background-color: #F2F2F2;
     border-radius: 25px;
     margin-right: 15px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-/* Comment répartir les cartes dans tout le container ? */
     align-content: space-around;
 }
 
 #populaires_container {
     width: 25%;
-    background-color: grey;
+    height: auto;
+    background-color: #F2F2F2;
     border-radius: 25px;
     margin-left: 15px;
     padding: 25px;
+}
+
+#populaire_titre {
+    width: 320px;
+    display: flex;
+    /* Comment répartir les 2 élements sur chaque côté avec un espace entre eux ? */
+    align-content: space-between;
 }
 
 /* Comment faire passer les cartes sous le titre ? */
@@ -209,6 +223,7 @@ nav a:hover, a:active {
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
+    margin: 15px;
 }
 
 .hebergement_card:hover {
@@ -222,9 +237,44 @@ nav a:hover, a:active {
     border-radius: 20px 20px 0 0;
 }
 
-.descriptif {
+.descriptif_h {
     line-height: 0.5;
     padding: 0 0 15px 5px;
+}
+
+.populaire_card {
+    position: relative;
+    width: 280px;
+    height: 120px;
+    background-color: white;
+    border-radius: 25px;
+    border: thick white solid;
+    box-shadow: 0 0 10px lightgrey;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.populaire_card:hover {
+    box-shadow: 0 0 10px grey;
+}
+
+.populaire_card img {
+    width: 110px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    float: left;
+}
+
+.descriptif_p {
+    margin-left: 110px;
+    padding-left: 10px;
+}
+
+.populaire_icons {
+    position: absolute;
+    top: 90px;
+    left: 120px;
 }
 
 .hebergement_card i, .populaire_card i {
