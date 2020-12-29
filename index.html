@@ -25,7 +25,7 @@
                         <li><a href="#hebergements">Hébergements</a></li>
                         <li><a href="#activites">Activités</a></li>
                     </ul>                    
-                </nav>
+                </nav>                
                 <div id="inscription">
                     <ul>
                         <li><a href=""><b style="color: #0065FC;">S'inscrire</b></a></li>
@@ -43,30 +43,42 @@
             <div id="searchbar">
                 <i class="fas fa-map-marker-alt"></i>
                 <form role="searchbox">
-                    <input id="champ" type="search" name="ville" placeholder="ville" required>
+                    <input id="champ" type="search" name="ville" placeholder="Marseille, France" required>
                     <button id="bouton" type="submit">Rechercher</button>
                 </form>
             </div>
             <!-- filtres -->
             <div id="filtres">
-                <div><p>Filtres</p></div>
+                <p id="filtres_titre">Filtres</p>
                 <div class="selection">
-                    <h3><i class="fas fa-money-bill-wave-alt"></i>Economique</h3>
+                    <div>
+                        <i class="fas fa-money-bill-wave-alt"></i>   
+                    </div>             
+                    <p>Economique</p>
                 </div>
                 <div class="selection">
-                    <h3><i class="fas fa-child"></i>Familial</h3>
+                    <div>
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <p>Familial</p>
                 </div>
-                <div class="selection">                    
-                    <h3><i class="fas fa-heart"></i>Romantique</h3>
+                <div class="selection">       
+                    <div>
+                        <i class="fas fa-heart"></i>
+                    </div>             
+                    <p>Romantique</p>
                 </div>
-                <div class="selection">                    
-                    <h3><i class="fas fa-dog"></i>Animaux autorisés</h3>
+                <div class="selection">
+                    <div>
+                        <i class="fas fa-dog"></i>
+                    </div>               
+                    <p>Animaux autorisés</p>
                 </div>
             </div>            
             <div id="resultat">
                 <i class="fas fa-info-circle"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>           
+            </div>
         </section>
         <!-- section hebergements -->
         <section id="hebergements">
@@ -163,7 +175,7 @@
         </div>
         <!-- resultats hebergements populaires -->
         <div id="resultats_populaires">
-            <h1>Populaires<i class="fas fa-chart-line" style="float: right;"></i></h1> 
+            <h1>Populaires<i class="fas fa-chart-line"></i></h1> 
             <div id="populaires_container">
                 <div class="populaire_card">
                     <a href="">
@@ -218,45 +230,47 @@
         </section>
         <!-- section activites -->
         <section id="activites">
-            <div><h1>Activités à Marseille</h1></div>
-            <div id="activites_container">
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\vieuxport_sm.jpg" alt="Vieux port" style="width: 300px; height: 400px;">
-                    <h2>Vieux port</h2>
-                    </a>
+            <div id="resultats_activites">
+                <h1>Activités à Marseille</h1>
+                <div id="activites_container">
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\vieuxport_sm.jpg" alt="Vieux port" style="width: 300px; height: 400px;">
+                        <h2>Vieux port</h2>
+                        </a>
+                    </div>
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\fortdepomegues_sm.jpg" alt="Fort de Pomegues" style="width: 300px; height: 200px;">
+                        <h2>Fort de Pomegues</h2>
+                        </a>
+                    </div>
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\ilesdufrioul_sm.jpg" alt="Iles du Frioul" style="width: 300px; height: 150px;">
+                        <h2>Iles du Frioul</h2>
+                        </a>
+                    </div>
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\parcnationaldescalanques_sm.jpg" alt="Parc national des Calanques" style="width: 300px; height: 400px;">
+                        <h2>Parc National des Calanques</h2>
+                        </a>
+                    </div>
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\notredamedelagarde_sm.jpg" alt="Notre Dame de la garde"  style="width: 300px; height: 175px;">
+                        <h2>Notre Dame de la garde</h2>
+                        </a>
+                    </div>
+                    <div class="suggestion">
+                        <a href="">
+                        <img src="images\activites\parclongchamp_sm.jpg" alt="Parc Longchamp" style="width: 300px; height: 175px;">
+                        <h2>Parc Longchamp</h2>
+                        </a>
+                    </div>
                 </div>
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\fortdepomegues_sm.jpg" alt="Fort de Pomegues" style="width: 300px; height: 200px;">
-                    <h2>Fort de Pomegues</h2>
-                    </a>
-                </div>
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\ilesdufrioul_sm.jpg" alt="Iles du Frioul" style="width: 300px; height: 150px;">
-                    <h2>Iles du Frioul</h2>
-                    </a>
-                </div>
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\parcnationaldescalanques_sm.jpg" alt="Parc national des Calanques" style="width: 300px; height: 400px;">
-                    <h2>Parc National des Calanques</h2>
-                    </a>
-                </div>
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\notredamedelagarde_sm.jpg" alt="Notre Dame de la garde"  style="width: 300px; height: 175px;">
-                    <h2>Notre Dame de la garde</h2>
-                    </a>
-                </div>
-                <div class="suggestion">
-                    <a href="">
-                    <img src="images\activites\parclongchamp_sm.jpg" alt="Parc Longchamp" style="width: 300px; height: 175px;">
-                    <h2>Parc Longchamp</h2>
-                    </a>
-                </div>
-            </div>
+            </div>            
         </section>
     </main>
     <footer>
