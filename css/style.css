@@ -1,4 +1,4 @@
-/* ----------body---------- */
+/* ---------- body ---------- */
 /* polices du site */
 body {
     font-family: 'Raleway', Arial, sans-serif;
@@ -18,7 +18,11 @@ h1 {
 }
 
 h2 {
-	font-size: 0.7em
+	font-size: 0.8em;
+}
+
+h3 {
+    font-size: 0.7em;
 }
 
 /* taille du corps de texte */
@@ -26,13 +30,13 @@ p {
 	font-size: 0.7em;
 }
 
-/* ----------main---------- */
+/* ---------- main ---------- */
 main {
     width: 90%;
     margin: auto;
 }
 
-/* ----------header---------- */
+/* ---------- header ---------- */
 header {
     width: 90%;
     margin: auto;
@@ -73,11 +77,11 @@ nav a {
 }
 
 nav a:hover, a:active {
-  	border-top: solid #0065FC;
-  	color: #0065FC;
+  	border-top: solid #0065fc;
+  	color: #0065fc;
 }
 
-/* ----------section_1_recherche----------*/
+/* ---------- section_1_recherche ----------*/
 #searchbar {
     display: inline-flex;
     width: 600px;
@@ -86,21 +90,21 @@ nav a:hover, a:active {
 }
 
 .fa-map-marker-alt {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 15px;
     font-size: x-small;
-    border: thin #F2F2F2 solid;
+    border: thin #f2f2f2 solid;
     border-radius: 15px 0 0 15px;
 }
 
 #champ {
-    border-color: #F2F2F2;
+    border-color: #f2f2f2;
 }
 
 [type="search"] {
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
-    border: thin #F2F2F2 solid;
+    border: thin #f2f2f2 solid;
     padding: 15px;
     margin-left: 0;
 }
@@ -109,10 +113,10 @@ nav a:hover, a:active {
 #bouton {
      margin-left: 0;
      padding: 15px;
-     background-color: #0065FC;
+     background-color: #0065fc;
      color: white;
      text-align: center;
-     border: thin #0065FC solid;
+     border: thin #0065fc solid;
      border-radius: 0 15px 15px 0;
 }
 
@@ -129,11 +133,11 @@ nav a:hover, a:active {
     align-items: center;
 }
 
-/* comment aligner les icones au milieu ? */
 #filtres {
     display: flex;
     align-items: center;
     padding-right: 15px;
+    vertical-align: middle;
 }
 
 .selection {
@@ -143,37 +147,35 @@ nav a:hover, a:active {
 
 .selection i {
     font-size: smaller;
-    color: #0065FC;
-    background-color: #DEEBFF;
+    color: #0065fc;
+    background-color: #deebff;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     text-align: center;
-    /* ne fonctionne pas */
     vertical-align: middle;
-    margin-right: 5px;
+    margin-right: 7px;
+    line-height: 35px;
 }
 
-.selection p {
-    border: thin #F2F2F2 solid;
+.selection h3 {
+    border: thin #f2f2f2 solid;
     border-radius: 50px;
     padding-right: 15px;
+    vertical-align: middle;
 }
 
 .selection i:hover {
-    /* indécise
-    box-shadow: 0 0 5px grey;
-    */
     /* pertinence charte graphique ?
     background-color: lightgreen;
     color: white;
     */
-    background-color: #0065FC;
-    color: #DEEBFF;
+    background-color: #0065fc;
+    color: #deebff;
 }
 
 .fa-info-circle {
-    color: #0065FC;
+    color: #0065fc;
     font-size: x-small;
     padding-right: 5px;
 }
@@ -182,40 +184,31 @@ nav a:hover, a:active {
     margin-right: 15px;
 }
 
-/* ----------section_2_hebergements---------- */
+/* ---------- section_2_hebergements ---------- */
 #hebergements {
     display: flex;
+    justify-content: space-between;
 }
-
-#hebergements_container {
-    width: 75%;
-    height: auto;
-    background-color: #F2F2F2;
+#resultats_hebergements {
+    width: 62%;
+    background-color: #f2f2f2;
     border-radius: 25px;
-    margin-right: 15px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-between;
 }
 
-#populaires_container {
-    width: 25%;
-    height: auto;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    margin-left: 15px;
-    padding: 25px;
+#resultats_hebergements h1, h3 {
+    padding-left: 25px;
 }
 
-#populaire_titre {
-    width: 320px;
+#hebergements_container {
     display: flex;
-    /* Comment répartir les 2 élements (titre, icone) sur chaque côté avec un espace entre eux ? */
-    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-/* Comment faire passer les cartes sous le titre ? */
 .hebergement_card {
     width: 230px;
     height: 172px;
@@ -241,6 +234,22 @@ nav a:hover, a:active {
     line-height: 0.5;
     padding: 0 0 15px 5px;
 }
+#resultats_populaires {
+    width: 25%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding: 25px;
+    justify-content: center;
+}
+
+/* #populaires_container {
+    width: 25%;
+    height: auto;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    margin-left: 15px;
+    padding: 25px;
+} */
 
 .populaire_card {
     position: relative;
@@ -279,10 +288,10 @@ nav a:hover, a:active {
 
 .hebergement_card i, .populaire_card i {
     font-size: smaller;
-    color: #0065FC;
+    color: #0065fc;
 }
 
-/* ----------section_3_activites---------- */
+/* ---------- section_3_activites ---------- */
 #activites_container {
     display: flex;
     justify-content: space-between;
@@ -311,7 +320,7 @@ nav a:hover, a:active {
     margin-left: 10px;
 }
 
-/* ----------footer---------- */
+/* ---------- footer ---------- */
 footer {
     background-color: #f2f2f2;
     width: 100%;
