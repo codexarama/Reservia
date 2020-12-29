@@ -242,14 +242,20 @@ nav a:hover, a:active {
     justify-content: center;
 }
 
-/* #populaires_container {
-    width: 25%;
-    height: auto;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    margin-left: 15px;
-    padding: 25px;
-} */
+#resultats_populaires h1 {
+    padding-left: 25px;
+}
+
+.fa-chart-line {
+    float: right;
+    padding-right: 25px;    
+}
+
+#populaires_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .populaire_card {
     position: relative;
@@ -259,8 +265,8 @@ nav a:hover, a:active {
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .populaire_card:hover {
