@@ -161,7 +161,7 @@ nav a:hover, a:active {
 
 .selection:hover, :active {
     background-color: #deebff;
-    box-shadow: 5 5 lightgrey;
+    box-shadow: 0 0 5px grey;
 }
 
 .selection i {
@@ -310,10 +310,10 @@ nav a:hover, a:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .suggestion {
-    width: 300px;
     height: fit-content;
     overflow: auto;
     border-radius: 20px;
@@ -334,6 +334,11 @@ nav a:hover, a:active {
     object-fit: cover;
 }
 
+.suggestion_small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* ---------- footer ---------- */
 footer {
     background-color: #f2f2f2;
