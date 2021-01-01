@@ -9,25 +9,29 @@ body {
 a {
 	text-decoration: none;
 	color: black;
-	font-size: 1em;
+	font-size: 1vw;
 }
 
 /* taille des titres */
 h1 {
-	font-size: 1.2em;
+	font-size: 1.2vw;
 }
 
 h2 {
-	font-size: 1.1em;
+	font-size: 1.1vw;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 /* taille du corps de texte */
 p {
-	font-size: 1em;
+	font-size: 1vw;
+}
+
+span {
+	font-size: 1vw;
 }
 
 /* ---------- header ---------- */
@@ -160,7 +164,7 @@ main {
 }
 
 .selection i {
-    font-size: medium;
+    font-size: 1vw;
     color: #0065fc;
     background-color: #deebff;
     border: 1px #deebff solid;
@@ -186,7 +190,7 @@ main {
 
 .fa-info-circle {
     color: #0065fc;
-    font-size: large;
+    font-size: 1.1vw;
     padding-right: 5px;
 }
 
@@ -239,15 +243,15 @@ main {
 .descriptif_h {
     margin-top: 0;
     padding: 0 0 15px 5px;
-    line-height: 0.2;
+    line-height: 0.2vw;
 }
 
 .descriptif_h h2 {
-    font-size: 0.9em;
+    font-size: 0.9vw;
 }
 
 .descriptif_h p {
-    font-size: 0.9em;
+    font-size: 0.9vw;
 }
 
 #resultats_populaires {
@@ -303,11 +307,11 @@ main {
 }
 
 .descriptif_p h2 {
-    font-size: 0.9em;
+    font-size: 0.9vw;
 }
 
 .descriptif_p p {
-    font-size: 0.9em;
+    font-size: 0.9vw;
 }
 
 .populaire_icons {
@@ -317,7 +321,6 @@ main {
 }
 
 .hebergement_card i, .populaire_card i {
-    font-size: smaller;
     color: #0065fc;
 }
 
@@ -343,7 +346,7 @@ main {
 
 .suggestion h2 {
     margin-left: 10px;
-    font-size: 0.9em;
+    font-size: 1vw;
 }
 
 .suggestion:hover {
