@@ -9,29 +9,20 @@ body {
 a {
 	text-decoration: none;
 	color: black;
-	font-size: 1vw;
 }
 
 /* taille des titres */
 h1 {
-	font-size: 1.2vw;
+	font-size: 1.2em;
 }
 
 h2 {
-	font-size: 1.1vw;
+	font-size: 1.1em;
 }
 
-h3 {
-    font-size: 1vw;
-}
-
-/* taille du corps de texte */
-p {
-	font-size: 1vw;
-}
-
-span {
-	font-size: 1vw;
+/* taille autres textes */
+h3, p, span, a {
+    font-size: 1em;
 }
 
 /* ---------- header ---------- */
@@ -42,7 +33,6 @@ header {
 
 #navbar {
     display: flex;
-    justify-content: space-between;
 }
 
 #logo {
@@ -53,8 +43,16 @@ header {
 margin-left: 0;
 }
 
+/*
+#logo_inscription {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+*/
+
 nav {
-    flex-basis: 90%;
+    flex-basis: 85%;
 }
 
 ul {
@@ -78,6 +76,25 @@ nav a:hover, a:active {
   	border-top: 3px solid #0065fc;
   	color: #0065fc;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+        nav {
+            flex-basis: 50%;
+            /*width: 50%*/
+
+        }
+        nav a {
+            padding: 10px 30px;
+        }
+        
+        nav a:hover, a:active {
+            border-top: none;
+            border-bottom: 3px solid #0065fc;
+            color: #0065fc;
+        }
+    }
 
 /* ---------- main ---------- */
 main {
@@ -164,7 +181,7 @@ main {
 }
 
 .selection i {
-    font-size: 1vw;
+    font-size: 1em;
     color: #0065fc;
     background-color: #deebff;
     border: 1px #deebff solid;
@@ -190,15 +207,16 @@ main {
 
 .fa-info-circle {
     color: #0065fc;
-    font-size: 1.1vw;
+    font-size: 1.1em;
     padding-right: 5px;
 }
 
 /* ---------- section_2_hebergements ---------- */
-#hebergements {
+#section_hebergements {
     display: flex;
     justify-content: space-between;
 }
+
 #resultats_hebergements {
     width: 62%;
     background-color: #f2f2f2;
@@ -206,7 +224,6 @@ main {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 #resultats_hebergements h1, h3 {
@@ -243,15 +260,15 @@ main {
 .descriptif_h {
     margin-top: 0;
     padding: 0 0 15px 5px;
-    line-height: 0.2vw;
+    line-height: 0.2em;
 }
 
 .descriptif_h h2 {
-    font-size: 0.9vw;
+    font-size: 0.9em;
 }
 
 .descriptif_h p {
-    font-size: 0.9vw;
+    font-size: 0.9em;
 }
 
 #resultats_populaires {
@@ -307,11 +324,11 @@ main {
 }
 
 .descriptif_p h2 {
-    font-size: 0.9vw;
+    font-size: 0.9em;
 }
 
 .descriptif_p p {
-    font-size: 0.9vw;
+    font-size: 0.9em;
 }
 
 .populaire_icons {
@@ -322,6 +339,54 @@ main {
 
 .hebergement_card i, .populaire_card i {
     color: #0065fc;
+}
+
+/* Responsive design */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    #section_hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #resultats_hebergements {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+    }
+
+    #resultats_populaires {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 0;
+    }
+    
+    #hebergements_container, #populaires_container {
+        width: 100%;
+    }
+
+    .hebergement_card {
+        width: 100%;
+        height: auto;
+    }
+
+    .hebergement_card img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .populaire_card {
+        width: 88%;
+        height: auto;
+    }
+
+    .populaire_card img {
+        width: 35%;
+        object-fit: cover;
+    }
 }
 
 /* ---------- section_3_activites ---------- */
