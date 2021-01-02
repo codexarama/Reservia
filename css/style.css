@@ -31,25 +31,13 @@ header {
     margin: 30px auto;
 }
 
-#navbar {
+#navbar1 {
     display: flex;
 }
 
 #logo {
     align-self: flex-end;
 }
-
-#inscription {
-margin-left: 0;
-}
-
-/*
-#logo_inscription {
-    display: flex;
-    flex-basis: 100%;
-    justify-content: space-between;
-}
-*/
 
 nav {
     flex-basis: 85%;
@@ -73,26 +61,49 @@ nav a {
 }
 
 nav a:hover, a:active {
-  	border-top: 3px solid #0065fc;
+  	border-top: medium solid #0065fc;
   	color: #0065fc;
+}
+
+#navbar2 {
+    display: none;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-
+        #navbar1 {
+            display: none;
+        }
+        #navbar2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #logo {
+            /*width: 100%;*/
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+        }       
         nav {
-            flex-basis: 50%;
-            /*width: 50%*/
-
+            /*width: 100%;*/
+            flex-basis: 100%;    
+        }
+        nav ul {
+            /*width: 100%;*/
+            flex-basis: 100%;
+            justify-content: space-around;
         }
         nav a {
-            padding: 10px 30px;
-        }
-        
+            padding: 15px 30px;
+        }        
         nav a:hover, a:active {
             border-top: none;
-            border-bottom: 3px solid #0065fc;
+            border-bottom: medium solid #0065fc;
             color: #0065fc;
+        }
+        #logo_inscription {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -100,6 +111,15 @@ nav a:hover, a:active {
 main {
     width: 90%;
     margin: auto;
+}
+
+/* responsive design main */
+/* xs devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main {
+        max-width: 600px;
+        margin: 0;
+    }
 }
 
 /* ---------- section_1_recherche ----------*/
@@ -205,10 +225,30 @@ main {
     margin-bottom: 30px;
 }
 
+#resultat img {
+    width: 30px;
+    padding-right: 5px
+}
+
 .fa-info-circle {
     color: #0065fc;
     font-size: 1.1em;
     padding-right: 5px;
+}
+
+/* responsive design filtres */
+/* xs devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #filtres {
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    /*#filtres_titres*/
+
+    .selection {
+        margin: 10px 5px;
+    }
 }
 
 /* ---------- section_2_hebergements ---------- */
@@ -352,15 +392,13 @@ main {
 
     #resultats_hebergements {
         width: 100%;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 5px 0;
         background-color: white;
     }
 
     #resultats_populaires {
         width: 100%;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 5px 0;
         border-radius: 0;
     }
     
@@ -387,6 +425,16 @@ main {
         width: 35%;
         object-fit: cover;
     }
+
+    .descriptif_p {
+        padding-left: 30px;
+    }
+
+    .populaire_icons {
+        position: absolute;
+        top: 90px;
+        padding-left: 20px;
+    }    
 }
 
 /* ---------- section_3_activites ---------- */
