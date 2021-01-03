@@ -78,31 +78,29 @@ nav a:hover, a:active {
             display: flex;
             flex-wrap: wrap;
         }
-        #logo {
-            /*width: 100%;*/
+     
+        #nav2 ul {
             display: flex;
-            flex-basis: 100%;
+        }
+
+        #nav2 ul li {
+            flex: 1 1 100%;
+        }
+
+        #nav2 ul li a {
+            padding: 15px 40px;
             justify-content: space-between;
-        }       
-        nav {
-            /*width: 100%;*/
-            flex-basis: 100%;    
         }
-        nav ul {
-            /*width: 100%;*/
-            flex-basis: 100%;
-            justify-content: space-around;
-        }
-        nav a {
-            padding: 15px 30px;
-        }        
-        nav a:hover, a:active {
+
+        #nav2 a:hover, a:active {
             border-top: none;
             border-bottom: medium solid #0065fc;
             color: #0065fc;
         }
+
         #logo_inscription {
             display: flex;
+            flex-basis: 100%;
             justify-content: space-between;
         }
     }
@@ -116,7 +114,7 @@ main {
 /* responsive design main */
 /* xs devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .main {
+    main {
         max-width: 600px;
         margin: 0;
     }
@@ -125,7 +123,7 @@ main {
 /* ---------- section_1_recherche ----------*/
 #searchbar {
     display: inline-flex;
-    width: 600px;
+    max-width: 600px;
     position: relative;
     align-items: center;
 }
@@ -209,6 +207,7 @@ main {
     width: 40px;
     text-align: center;
     vertical-align: middle;
+    margin-left: -1px;
     margin-right: 7px;
     line-height: 40px;    
 }
@@ -232,13 +231,17 @@ main {
 
 .fa-info-circle {
     color: #0065fc;
-    font-size: 1.1em;
     padding-right: 5px;
 }
 
 /* responsive design filtres */
 /* xs devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    #recherche {
+        width: 90%;
+        margin: auto
+    }
+
     #filtres {
         flex-wrap: wrap;
         align-content: space-around;
@@ -381,8 +384,8 @@ main {
     color: #0065fc;
 }
 
-/* Responsive design */
-/* Extra small devices (phones, 600px and down) */
+/* responsive design hebergements */
+/* xs devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     
     #section_hebergements {
@@ -478,25 +481,35 @@ main {
 }
 /* ---------- footer ---------- */
 footer {
-    background-color: #f2f2f2;
-    padding: 30px 30px 40px;
     margin-top: 50px;
-    /*position fixe ? */
+    /*position fixe ?*/
 }
 
 #footer_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+    background-color: #f2f2f2;
+    padding: 30px 40px;
 
-.footer_children {
-    flex-basis: 30%;
 }
 
 #footer_container ul {
 	text-align: left;
-	margin: 0;
     padding: 0;
     line-height: 1.6;
 }
+
+.footer_children {
+    flex-basis: 30%;
+    margin: 10px;
+}
+
+/* responsive design footer */
+/* xs devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footer_children {
+        flex-basis: 100%;
+    }
+}
+
