@@ -69,41 +69,73 @@ nav a:hover, a:active {
     display: none;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-        #navbar1 {
-            display: none;
-        }
-        #navbar2 {
-            display: flex;
-            flex-wrap: wrap;
-        }
-     
-        #nav2 ul {
-            display: flex;
-        }
-
-        #nav2 ul li {
-            flex: 1 1 100%;
-        }
-
-        #nav2 ul li a {
-            padding: 15px 40px;
-            justify-content: space-between;
-        }
-
-        #nav2 a:hover, a:active {
-            border-top: none;
-            border-bottom: medium solid #0065fc;
-            color: #0065fc;
-        }
-
-        #logo_inscription {
-            display: flex;
-            flex-basis: 100%;
-            justify-content: space-between;
-        }
+/* responsive design navbar */
+/* extra small devices (phones) */
+@media only screen and (max-width: 450px) {
+    #navbar1 {
+        display: none;
     }
+
+    #navbar2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    nav ul {
+        display: flex;
+        /*flex: 50%;*/
+    }
+
+    nav a {
+        padding: 15px 50px;
+        flex: 50%;
+        /*justify-content: space-between;*/
+    }
+
+    nav a:hover, a:active {
+        border-top: none;
+        border-bottom: medium solid #0065fc;
+        color: #0065fc;
+    }
+
+    #logo_inscription {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* responsive design navbar */
+/* small devices and up (large phones and portrait tablets and up) */
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    #navbar2 {
+        display: none;
+    }
+
+    /*#navbar1 {
+
+    }*/
+
+    nav {
+        flex-basis: 50%;
+    }
+
+    nav ul {
+        display: flex;
+        float: center;
+    }
+
+    nav a {
+        padding: 30px 20px;
+    }
+    
+    #inscription {
+        flex-basis: 100%;
+        justify-self: flex-start;
+    }
+}
+
+
 
 /* ---------- main ---------- */
 main {
@@ -112,10 +144,9 @@ main {
 }
 
 /* responsive design main */
-/* xs devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* extra small to small devices (phones to large phones and portrait tablets) */
+@media only screen and (max-width: 768px) {
     main {
-        max-width: 600px;
         margin: 0;
     }
 }
@@ -149,8 +180,12 @@ main {
     margin-left: 0;
 }
 
+#bouton2 {
+    display: none;
+}
+
 /* comment supprimer la marge entre le champ et le bouton ? */
-#bouton {
+#bouton1 {
      margin-left: 0;
      padding: 15px;
      background-color: #0065fc;
@@ -235,11 +270,15 @@ main {
 }
 
 /* responsive design filtres */
-/* xs devices (phones, 600px and down) */
+/* medium devices (phones to large phones and portrait tablets) */
 @media only screen and (max-width: 600px) {
     #recherche {
         width: 90%;
         margin: auto
+    }
+
+    #bouton2 {
+        display: none;
     }
 
     #filtres {
@@ -247,7 +286,11 @@ main {
         align-content: space-around;
     }
     
-    /*#filtres_titres*/
+    #filtres_titre {
+        display: flex;
+        width: 100%;
+        font-weight: bold;
+    }
 
     .selection {
         margin: 10px 5px;
@@ -261,12 +304,13 @@ main {
 }
 
 #resultats_hebergements {
-    width: 62%;
+    width: 80%;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
+    margin-right: 15px;
 }
 
 #resultats_hebergements h1, h3 {
@@ -281,12 +325,12 @@ main {
 
 .hebergement_card {
     width: 230px;
-    height: 172px;
+    height: 200px;
     background-color: white;
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
-    margin: 15px;
+    margin: 10px; auto;
 }
 
 .hebergement_card:hover {
@@ -295,7 +339,7 @@ main {
 
 .hebergement_card img {
     width: 230px;
-    height: 100px;
+    height: 130px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -304,31 +348,29 @@ main {
     margin-top: 0;
     padding: 0 0 15px 5px;
     line-height: 0.2em;
+    font-size: 0.9em;
 }
 
 .descriptif_h h2 {
-    font-size: 0.9em;
-}
-
-.descriptif_h p {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #resultats_populaires {
-    width: 25%;
+    width: 40%;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 25px;
+    margin-left: 25px;
     justify-content: center;
 }
 
 #resultats_populaires h1 {
-    padding-left: 25px;
+    padding-left: 50px;
 }
 
 .fa-chart-line {
     float: right;
-    padding-right:25px;    
+    padding-right: 50px;    
 }
 
 #populaires_container {
@@ -338,15 +380,13 @@ main {
 }
 
 .populaire_card {
-    position: relative;
-    width: 280px;
-    height: 120px;
+    width: 350px;
+    height: 150px;
     background-color: white;
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px auto;
 }
 
 .populaire_card:hover {
@@ -354,39 +394,26 @@ main {
 }
 
 .populaire_card img {
-    width: 110px;
-    height: 120px;
+    width: 40%;
+    height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     float: left;
+    margin-right: 10px;
 }
 
 .descriptif_p {
-    margin-left: 110px;
-    padding-left: 10px;
-}
-
-.descriptif_p h2 {
     font-size: 0.9em;
 }
 
-.descriptif_p p {
-    font-size: 0.9em;
-}
-
-.populaire_icons {
-    position: absolute;
-    top: 90px;
-    left: 120px;
-}
-
+/* comment aligner les icones en bas du container ? */
 .hebergement_card i, .populaire_card i {
     color: #0065fc;
 }
 
 /* responsive design hebergements */
-/* xs devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* extra small devices (phones) */
+@media only screen and (max-width: 450px) {
     
     #section_hebergements {
         display: flex;
@@ -412,32 +439,79 @@ main {
     .hebergement_card {
         width: 100%;
         height: auto;
+        margin: 5px;
     }
 
     .hebergement_card img {
         width: 100%;
-        object-fit: cover;
     }
 
     .populaire_card {
-        width: 88%;
+        width: 90%;
         height: auto;
+        margin: 5px
     }
 
     .populaire_card img {
-        width: 35%;
-        object-fit: cover;
+        width: 40%;
     }
 
     .descriptif_p {
-        padding-left: 30px;
+        padding-left: 5px;
+    }
+}
+
+/* responsive design hebergements */
+/* medium devices (large phones and portrait tablets) */
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    #section_hebergements {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    .populaire_icons {
-        position: absolute;
-        top: 90px;
-        padding-left: 20px;
-    }    
+    #resultats_hebergements {
+        width: 100%;
+        padding-top: 5px 0;
+        background-color: white;
+    }
+
+    #resultats_populaires {
+        width: 100%;
+        padding-top: 5px 0;
+        border-radius: 0;
+    }
+    
+    #resultats_populaires h1 {
+        padding: 10px 50px;
+    }
+    
+    #hebergements_container, #populaires_container {
+        width: 100%;
+    }
+
+    .hebergement_card {
+        width: 80%;
+        height: auto;
+        margin: 5px;
+    }
+
+    .hebergement_card img {
+        width: 100%;
+    }
+
+    .populaire_card {
+        width: 65%;
+        height: auto;
+        margin: 10px
+    }
+
+    .populaire_card img {
+        width: 40%;
+    }
+
+    .descriptif_p {
+        padding-left: 5px;
+    }
 }
 
 /* ---------- section_3_activites ---------- */
@@ -479,6 +553,32 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* responsive design activites */
+/* extra small devices (phones) */
+@media only screen and (max-width: 450px) {
+    #resultats_activites {
+        margin: 30px;
+    }
+
+    #activites_container {
+        margin-top: 15px;
+    }
+    .style {
+        display: none;
+    }    
+
+    .suggestion, .suggestion_small {
+        width: 100%;
+        height: 375px;
+    }
+
+    .suggestion img, .suggestion_small img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
 /* ---------- footer ---------- */
 footer {
     margin-top: 50px;
@@ -491,7 +591,6 @@ footer {
     justify-content: space-around;
     background-color: #f2f2f2;
     padding: 30px 40px;
-
 }
 
 #footer_container ul {
@@ -506,10 +605,27 @@ footer {
 }
 
 /* responsive design footer */
-/* xs devices (phones, 600px and down) */
+/* extra small to small devices (phones to large phones and portrait tablets) */
 @media only screen and (max-width: 600px) {
+    #footer_container {
+        padding: 20px 30px;
+    }
+
+    #footer_container ul {
+        line-height: 1.4;
+        margin: 0;
+    }
+
     .footer_children {
         flex-basis: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: 5px;
+    }
+
+    #footer_children h2 {
+        margin-block-start: 0;
+        margin-block-end: 5px;
     }
 }
 
