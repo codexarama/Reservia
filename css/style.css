@@ -124,50 +124,14 @@ nav a:hover, a:active {
     }
 }
 
-/* responsive design navbar */
-/* small devices and up (large phones and portrait tablets and up) */
-/*@media only screen and (min-width: 601px) and (max-width: 768px) {
-    #navbar2 {
-        display: none;
-    }
-
-    nav {
-        flex-basis: 50%;
-    }
-
-    nav ul {
-        display: flex;
-        float: center;
-    }
-
-    nav a {
-        padding: 30px 20px;
-    }
-    
-    #inscription {
-        flex-basis: 100%;
-        justify-self: flex-start;
-    }
-}*/
-
-
-
 /* ---------- main ---------- */
 main {
     width: 90%;
     margin: auto;
 }
 
-/* responsive design main */
-/* extra small to small devices (phones to large phones and portrait tablets) */
-@media only screen and (max-width: 768px) {
-    main {
-        margin: 0;
-    }
-}
-
 /* ---------- section_1_recherche ----------*/
-#searchbar {
+#searchbar1 {
     display: inline-flex;
     max-width: 600px;
     position: relative;
@@ -195,12 +159,12 @@ main {
     margin-left: 0;
 }
 
-#bouton2 {
+#searchbar2 {
     display: none;
 }
 
 /* comment supprimer la marge entre le champ et le bouton ? */
-#bouton1 {
+#bouton {
      margin-left: 0;
      padding: 15px;
      background-color: #0065fc;
@@ -287,12 +251,23 @@ main {
 /* responsive design filtres */
 /* medium devices (phones to large phones and portrait tablets) */
 @media only screen and (max-width: 600px) {
-    #recherche {
+    /*#recherche {
         width: 90%;
         margin: auto
+    }*/
+
+    #searchbar1 {
+        display: none;
     }
 
-    #bouton2 {
+    #searchbar2 {
+        display: inline-flex;
+        max-width: 600px;
+        position: relative;
+        align-items: center;
+    }
+    
+    #searchbox {
         display: none;
     }
 
