@@ -250,11 +250,7 @@ main {
 
 /* responsive design filtres */
 /* medium devices (phones to large phones and portrait tablets) */
-@media only screen and (max-width: 600px) {
-    /*#recherche {
-        width: 90%;
-        margin: auto
-    }*/
+@media only screen and (max-width: 768px) {
 
     #searchbar1 {
         display: none;
@@ -262,7 +258,7 @@ main {
 
     #searchbar2 {
         display: inline-flex;
-        max-width: 600px;
+        max-width: 500px;
         position: relative;
         align-items: center;
     }
@@ -300,7 +296,6 @@ main {
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 15px;
 }
 
 #resultats_hebergements h1, h3 {
@@ -346,7 +341,7 @@ main {
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 25px;
-    margin-left: 25px;
+    margin-left: 35px;
     justify-content: center;
 }
 
@@ -392,40 +387,50 @@ main {
     font-size: 0.9em;
 }
 
-/* comment aligner les icones en bas du container ? */
+/* comment aligner les icones etoiles en bas du container ? */
+.populaire_icons {
+    /*padding-top: 30px;*/
+}
+
 .hebergement_card i, .populaire_card i {
     color: #0065fc;
 }
 
 /* responsive design hebergements */
 /* extra small devices (phones) */
-@media only screen and (max-width: 450px) {
-    
+@media only screen and (max-width: 425px) {
     #section_hebergements {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    #resultats_hebergements {
+    #resultats_hebergements, #resultats_populaires {
         width: 100%;
-        padding-top: 5px 0;
-        background-color: white;
-    }
-
-    #resultats_populaires {
-        width: 100%;
-        padding-top: 5px 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
         border-radius: 0;
     }
-    
-    #hebergements_container, #populaires_container {
+
+    #resultats_hebergements {
+        background-color: white;
+    }
+   
+    #hebergements_container {
         width: 100%;
+    }
+
+    #populaires_container {
+        width: 100%;
+        padding: 15px 0;
     }
 
     .hebergement_card {
         width: 100%;
         height: auto;
-        margin: 5px;
+        margin: 10px;
     }
 
     .hebergement_card img {
@@ -435,69 +440,90 @@ main {
     .populaire_card {
         width: 90%;
         height: auto;
-        margin: 5px
-    }
-
-    .populaire_card img {
-        width: 40%;
-    }
-
-    .descriptif_p {
-        padding-left: 5px;
-    }
-}
-
-/* responsive design hebergements */
-/* medium devices (large phones and portrait tablets) */
-@media only screen and (min-width: 451px) and (max-width: 768px) {
-    #section_hebergements {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #resultats_hebergements {
-        width: 100%;
-        padding-top: 5px 0;
-        background-color: white;
-    }
-
-    #resultats_populaires {
-        width: 100%;
-        padding-top: 5px 0;
-        border-radius: 0;
-    }
-    
-    #resultats_populaires h1 {
-        padding: 10px 50px;
-    }
-    
-    #hebergements_container, #populaires_container {
-        width: 100%;
-    }
-
-    .hebergement_card {
-        width: 80%;
-        height: auto;
-        margin: 5px;
-    }
-
-    .hebergement_card img {
-        width: 100%;
-    }
-
-    .populaire_card {
-        width: 65%;
-        height: auto;
         margin: 10px
     }
 
     .populaire_card img {
         width: 40%;
     }
+}
 
-    .descriptif_p {
-        padding-left: 5px;
+/* responsive design hebergements */
+/* medium devices (large phones and portrait tablets) */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    #section_hebergements {
+        display: flex;
+        flex-direction: column-reverse;
     }
+
+    #resultats_hebergements, #resultats_populaires {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 0;
+    }
+
+    #resultats_hebergements {
+        background-color: white;
+    }
+
+/* responsive design hebergements */
+/* large devices (landscape tablets, laptops, desktops) */
+/* A CORRIGER - LES PARAMETRES NE FONCTIONNENT PAS */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #resultats_hebergements {
+        width: 65%;
+        background-color: white;
+        border-radius: 25px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    #resultats_populaires {
+        width: 25%;
+        background-color: #f2f2f2;
+        border-radius: 25px;
+        padding: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    #resulats_populaires h1 {
+         padding-left: 10px;
+         font-size: 0.8em;
+    }
+
+    .fa-chart-line {
+        padding-right: 10px;
+    }
+
+    .populaire_card {
+        width: 230px;
+        height: 190px;
+        background-color: white;
+        border-radius: 25px;
+        border: thick white solid;
+        box-shadow: 0 0 10px lightgrey;
+        margin: 10px; auto;
+    }
+
+    .populaire_card img {
+        width: 230px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+    .descriptif_p {
+        margin-top: 0;
+        padding: 0 0 15px 5px;
+        line-height: 0.2em;
+        font-size: 0.9em;
+    }    
 }
 
 /* ---------- section_3_activites ---------- */
@@ -542,7 +568,7 @@ main {
 
 /* responsive design activites */
 /* extra small devices (phones) */
-@media only screen and (max-width: 450px) {
+/*@media only screen and (max-width: 425px) {
     #resultats_activites {
         margin: 30px;
     }
@@ -563,7 +589,7 @@ main {
         width: 100%;
         height: 300px;
     }
-}
+}*/
 
 /* ---------- footer ---------- */
 footer {
@@ -591,6 +617,7 @@ footer {
 }
 
 /* responsive design footer */
+/* ATTENTION PLUS DE STYLES A PARTIR DE 768px */
 /* extra small to small devices (phones to large phones and portrait tablets) */
 @media only screen and (max-width: 600px) {
     #footer_container {
