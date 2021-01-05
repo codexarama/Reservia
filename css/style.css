@@ -450,7 +450,7 @@ main {
 
 /* responsive design hebergements */
 /* medium devices (large phones and portrait tablets) */
-@media only screen and (min-width: 426px) and (max-width: 768px) {
+@media only screen /*and (min-width: 426px)*/ and (max-width: 768px) {
     #section_hebergements {
         display: flex;
         flex-direction: column-reverse;
@@ -473,7 +473,7 @@ main {
 /* responsive design hebergements */
 /* large devices (landscape tablets, laptops, desktops) */
 /* A CORRIGER - LES PARAMETRES NE FONCTIONNENT PAS */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     #resultats_hebergements {
         width: 65%;
         background-color: white;
@@ -606,7 +606,7 @@ footer {
 }
 
 #footer_container ul {
-	text-align: left;
+    text-align: left;
     padding: 0;
     line-height: 1.6;
 }
@@ -617,11 +617,12 @@ footer {
 }
 
 /* responsive design footer */
-/* ATTENTION PLUS DE STYLES A PARTIR DE 768px */
+/* ATTENTION PLUS DE STYLES EN-DESSOUS DE 425px ET A PARTIR DE 769px */
 /* extra small to small devices (phones to large phones and portrait tablets) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px)  {
     #footer_container {
         padding: 20px 30px;
+        background-color: #f2f2f2;
     }
 
     #footer_container ul {
@@ -641,4 +642,3 @@ footer {
         margin-block-end: 5px;
     }
 }
-
