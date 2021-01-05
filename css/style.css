@@ -159,6 +159,10 @@ main {
     margin-left: 0;
 }
 
+/*.display_mobile {
+    display: none;
+}*/
+
 #searchbar2 {
     display: none;
 }
@@ -290,7 +294,6 @@ main {
 }
 
 #resultats_hebergements {
-    width: 80%;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding: 25px;
@@ -315,7 +318,7 @@ main {
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
-    margin: 10px; auto;
+    margin: 10px;
     padding-block-end: 5px;
 }
 
@@ -374,22 +377,23 @@ main {
     justify-content: space-around;
 }
 
-.populaire_card {
+#populaires_container div {
     width: 350px;
     height: 150px;
     background-color: white;
     border-radius: 25px;
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
-    margin: 15px auto;
+    margin: 15px;
 }
 
-.populaire_card:hover {
+#populaires_container div:hover {
+    
     box-shadow: 0 0 10px grey;
 }
 
-.populaire_card img {
-    width: 40%;
+#populaires_container div img {
+    width: 130px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
@@ -397,98 +401,26 @@ main {
     margin-right: 10px;
 }
 
-.descriptif_p {
+#populaires_container div h2 {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+#populaires_container div p {
     font-size: 0.9em;
+    /*margin-bottom: 50px;*/
 }
 
 /* comment aligner les icones etoiles en bas du container ? */
-.populaire_icons {
-    /*padding-top: 30px;*/
-}
-
-/*#hebergements_container div i {
-.hebergement_card i, .populaire_card i {
+#populaires_container div i {
+    font-size: smaller;
     color: #0065fc;
-}*/
-
-/* responsive design hebergements */
-/* extra small devices (phones) */
-@media only screen and (max-width: 425px) {
-    #section_hebergements {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #resultats_hebergements, #resultats_populaires {
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        border-radius: 0;
-    }
-
-    #resultats_hebergements {
-        background-color: white;
-    }
-   
-    #hebergements_container {
-        width: 100%;
-    }
-
-    #populaires_container {
-        width: 100%;
-        padding: 15px 0;
-    }
-
-    .hebergement_card {
-        width: 100%;
-        height: auto;
-        margin: 10px;
-    }
-
-    .hebergement_card img {
-        width: 100%;
-    }
-
-    .populaire_card {
-        width: 90%;
-        height: auto;
-        margin: 10px
-    }
-
-    .populaire_card img {
-        width: 40%;
-    }
-}
-
-/* responsive design hebergements */
-/* medium devices (large phones and portrait tablets) */
-@media only screen /*and (min-width: 426px)*/ and (max-width: 768px) {
-    #section_hebergements {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #resultats_hebergements, #resultats_populaires {
-        width: 100%;
-        margin-right: 0;
-        margin-left: 0;
-        padding: 0;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        border-radius: 0;
-    }
-
-    #resultats_hebergements {
-        background-color: white;
-    }
+} 
 
 /* responsive design hebergements */
 /* large devices (landscape tablets, laptops, desktops) */
 /* A CORRIGER - LES PARAMETRES NE FONCTIONNENT PAS */
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
     #resultats_hebergements {
         width: 65%;
         background-color: white;
@@ -539,7 +471,71 @@ main {
         line-height: 0.2em;
         font-size: 0.9em;
     }    
+}*/
+
+/* responsive design hebergements */
+/* medium devices (large phones and portrait tablets) */
+@media only screen and (max-width: 768px) {
+    #section_hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #resultats_hebergements, #resultats_populaires {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 0;
+    }
+
+    #resultats_hebergements {
+        background-color: white;
+    }
 }
+
+/* responsive design hebergements */
+/* extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+    #section_hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #resultats_hebergements {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 0;
+        background-color: white;
+    }
+   
+    #resultats_populaires {
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    #populaires_container div {
+        margin: 10px auto;
+    }
+
+    #hebergements_container div {
+        width: 350px;
+        height: 190px;
+        margin: 10px;
+    }
+
+    #hebergements_container div img {
+        width: 350px;
+        height: 120px;
+    }
+}
+
+
 
 /* ---------- section_3_activites ---------- */
 #resultats_activites {
