@@ -308,7 +308,7 @@ main {
     justify-content: space-around;
 }
 
-.hebergement_card {
+#hebergements_container div {
     width: 230px;
     height: 190px;
     background-color: white;
@@ -316,24 +316,38 @@ main {
     border: thick white solid;
     box-shadow: 0 0 10px lightgrey;
     margin: 10px; auto;
+    padding-block-end: 5px;
 }
 
-.hebergement_card:hover {
+#hebergements_container div:hover {
     box-shadow: 0 0 10px grey;
 }
 
-.hebergement_card img {
+#hebergements_container div img {
     width: 230px;
     height: 120px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.descriptif_h {
+#hebergements_container div h2 {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    line-height: 0;
+    font-size: 1em;
+}
+
+#hebergements_container div p {
     margin-top: 0;
-    padding: 0 0 15px 5px;
-    line-height: 0.2em;
+    margin-bottom: 0;
+    padding-left: 10px;
+    line-height: 2;
     font-size: 0.9em;
+}
+
+#hebergements_container div i {
+    font-size: smaller;
+    color: #0065fc;
 }
 
 #resultats_populaires {
@@ -392,9 +406,10 @@ main {
     /*padding-top: 30px;*/
 }
 
+/*#hebergements_container div i {
 .hebergement_card i, .populaire_card i {
     color: #0065fc;
-}
+}*/
 
 /* responsive design hebergements */
 /* extra small devices (phones) */
