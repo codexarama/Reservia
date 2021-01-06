@@ -11,6 +11,11 @@ a {
 	color: black;
 }
 
+/* aspect des listes par defaut */
+ul {
+    list-style: none;
+  }
+  
 /* taille des titres */
 h1 {
 	font-size: 1.2em;
@@ -36,16 +41,11 @@ header {
 }
 
 nav {
-    flex-basis: 100%;
-}
-
-ul {
-  list-style: none;
+    justify-content: space-between;
 }
 
 nav ul {
     display: flex;
-    float: right;
 }
 
 nav li {
