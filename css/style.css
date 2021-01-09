@@ -137,7 +137,7 @@ main {
 
 [type="search"] {
     -webkit-appearance: textfield;
-    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
     border: thin #f2f2f2 solid;
     padding: 15px;
 }
@@ -468,7 +468,8 @@ footer {
     #resultats_activites2 {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     #resultats_activites2 h1 {
@@ -490,11 +491,15 @@ footer {
         width: 100%;
         height: 200px;
     }
+
+    footer {
+        margin-top: 0;
+    }
 }
 
 /* responsive design */
 /* large devices (landscape tablets and lap-desktops) */
-@media only screen and (max-width: 1024px)  {
+@media only screen and (max-width: 1200px)  {
     main {
         width: 100%;
     }
@@ -516,12 +521,17 @@ footer {
         padding-top: 25px;
         padding-bottom: 25px;
         border-radius: 0;
-        background-color: white;
+        background-color: #f2f2f2;
         justify-content: center;
     }
 
     #resultats_hebergements h1, h3 {
         padding-left: 75px;
+    }
+    
+    #hebergements_container {
+        width: 90%;
+        margin: auto;
     }
     
     #resultats_populaires {
@@ -532,28 +542,36 @@ footer {
         padding-top: 25px;
         padding-bottom: 25px;
         border-radius: 0;
+        background-color: #0065fc;
+        box-shadow: lightgray;
     }
 
     #titre {
         width: 100%;
         margin: 0;
         justify-content: center;
+        color: white;
     }
 
     #titre i {
     padding-left: 10px;
+    color: white;
     }
 
     #populaires_container {
         justify-content: space-evenly;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 30px;
     }
 
     #populaires_container div {
         width: 200px;
         height: 250px;
-        margin: 5px;
+        box-shadow: 0 0 10px whitesmoke;
+    }
+
+    #populaires_container div:hover {
+        box-shadow: 0 0 10px white; 
     }
 
     #populaires_container div img {
@@ -584,8 +602,13 @@ footer {
         padding-left: 75px;
     }
 
-    footer {
-        margin-top: 0;
+    #footer_container {
+        padding: 20px 30px;
+        background-color: grey;
+    }
+
+    .footer_children h2, .footer_children a {
+        color: lightgray;
     }
 
     .footer_children:nth-of-type(1) {
@@ -631,12 +654,12 @@ footer {
         margin: auto;
     }
 
-    #resultats_populaires {
+    /*#resultats_populaires {
         width: 90%;
         margin: auto;
         border-radius: 25px;
         background-color: #f2f2f2;
-    }
+    }*/
 
     #titre {
         width: 75%;
@@ -675,27 +698,6 @@ footer {
         padding: 0;
     }
     
-    #resultats_activites2 {
-        background-color: #0065fc;
-    }
-
-    #resultats_activites2 h1 {
-        color: white;
-    }
-
-    .suggestion_l, .suggestion_m, .suggestion_s, .suggestion_xs {
-        border: thin white solid;
-    }
-
-    #footer_container {
-        padding: 20px 30px;
-        background-color: grey;
-    }
-
-    .footer_children h2, .footer_children a {
-        color: white;
-    }
-
     #footer_container ul {
         line-height: 1.4;
         margin: 0;
@@ -789,17 +791,31 @@ footer {
         align-items: center;
         width: 75%;
         margin: auto;
+        color: black;
+    }
+
+    #titre i {
+        color: black;
+    }
+
+    #resultats_populaires {
+        background-color: #f2f2f2;
     }
 
     #populaires_container div {
         width: 75%;
         margin: 10px auto;
+        box-shadow: 0 0 10px lightgray;
     }
 
     #populaires_container div img {
         width: 35%;
     }
 
+    #populaires_container div:hover {
+        box-shadow: 0 0 10px grey;
+    }
+        
     #resultats_hebergements h1, h3 {
         text-align: left;
         padding-left: 40px;
