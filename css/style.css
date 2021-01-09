@@ -567,11 +567,11 @@ footer {
     #populaires_container div {
         width: 200px;
         height: 250px;
-        box-shadow: 0 0 10px whitesmoke;
+        box-shadow: 0 0 5px whitesmoke;
     }
 
     #populaires_container div:hover {
-        box-shadow: 0 0 10px white; 
+        box-shadow: 0 0 5px white; 
     }
 
     #populaires_container div img {
