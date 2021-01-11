@@ -17,19 +17,31 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width: 1739px) {
+@media only screen and (max-width: 1800px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1801px) {
     body {
         width: 85%;
         margin: auto;
     }
+}
 
-    #footer_container {
-        padding: 0;
-        justify-content: center;
+@media only screen and (min-width: 2101px) {
+    body {
+        width: 75%;
+        margin: auto;
     }
+}
 
-    .footer_children {
-        width: 20%;
+@media only screen and (min-width: 2401px) {
+    body {
+        width: 65%;
+        margin: auto;
     }
 }
 
@@ -284,9 +296,18 @@ main {
     font-size: 0.9em;
 }
 
-#hebergements_container div i {
+.true {
     font-size: smaller;
-    color: #0065fc;
+    color: #0065fc; 
+}
+
+.false {
+    font-size: smaller;
+    color: lightgray; 
+}
+
+.first_h {
+    padding-left: 10px;
 }
 
 #resultats_populaires {
@@ -348,10 +369,6 @@ main {
 }
 
 /* comment aligner les icones en bas du container ? */
-#populaires_container div i {
-    font-size: smaller;
-    color: #0065fc;
-} 
 
 /* ---------- section_3_activites ---------- */
 #resultats_activites2 {
@@ -526,11 +543,11 @@ footer {
     }
 
     #resultats_hebergements h1, h3 {
-        padding-left: 75px;
+        padding-left: 100px;
     }
     
     #hebergements_container {
-        width: 90%;
+        width: 89%;
         margin: auto;
     }
     
@@ -571,7 +588,7 @@ footer {
     }
 
     #populaires_container div:hover {
-        box-shadow: 0 0 5px white; 
+        box-shadow: 0 0 10px whitesmoke; 
     }
 
     #populaires_container div img {
@@ -582,8 +599,8 @@ footer {
     margin-bottom: 5px;
     }
     
-    .icon {
-        padding-left: 5px;
+    .first_p {
+        padding-left: 5px;    
     }
 
     #populaires_container div h2 {
@@ -599,7 +616,7 @@ footer {
     }
 
     #resultats_activites2 h1 {
-        padding-left: 75px;
+        padding-left: 100px;
     }
 
     #footer_container {
@@ -607,7 +624,11 @@ footer {
         background-color: grey;
     }
 
-    .footer_children h2, .footer_children a {
+    .footer_children h2 {
+        color: whitesmoke;
+    } 
+    
+    .footer_children a {
         color: lightgray;
     }
 
@@ -654,12 +675,9 @@ footer {
         margin: auto;
     }
 
-    /*#resultats_populaires {
-        width: 90%;
-        margin: auto;
-        border-radius: 25px;
-        background-color: #f2f2f2;
-    }*/
+    #hebergements_container {
+        width: 100%;
+    }
 
     #titre {
         width: 75%;
@@ -694,7 +712,7 @@ footer {
         line-height: 2.5;
     }
 
-    .icon {
+    .first_p {
         padding: 0;
     }
     
