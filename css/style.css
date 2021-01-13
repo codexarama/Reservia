@@ -477,7 +477,7 @@ main {
         width: 300px;
     }
 
-    #resultats_hebergements article h2, h3 {
+    #resultats_hebergements h2, h3 {
         padding-left: 75px;
     }
 
@@ -487,15 +487,7 @@ main {
     }
 
     #resultats_populaires article {
-        width: 350px;
-    }
-
-    #resultats_populaires article img {
-        width: 100px;
-    }
-
-    .icon {
-        left: 110px;
+        width: 28%;
     }
 
     #resultats_activites_desktop {
@@ -517,7 +509,7 @@ main {
     .suggestion_m,
     .suggestion_s,
     .suggestion_xs {
-        width: 40%;
+        width: 30%;
         height: 250px;
         margin-bottom: 30px;
         background-color: white;
@@ -566,11 +558,6 @@ main {
         margin-top: 25px;
     }
 
-    #resultats_hebergements article,
-    #resultats_hebergements article img {
-        width: 250px;
-    }
-
     #resultats_hebergements h2, h3 {
         padding-left: 50px;
     }
@@ -580,7 +567,6 @@ main {
         margin-top: 15px;
         margin-bottom: 30px;
         background-color: #0065fc;
-        /*box-shadow: lightgray;*/
     }
 
     #populaires_titre {
@@ -596,7 +582,7 @@ main {
     }
 
     #resultats_populaires article {
-        width: 200px;
+        width: 25%;
         height: 250px;
         box-shadow: 0 0 5px whitesmoke;
     }
@@ -606,11 +592,11 @@ main {
     }
 
     #resultats_populaires article img {
-    width: 200px;
-    height: 170px;
-    border-radius: 20px 20px 0 0;
-    margin-right: 0;
-    margin-bottom: 5px;
+        width: 100%;
+        height: 170px;
+        border-radius: 20px 20px 0 0;
+        margin-right: 0;
+        margin-bottom: 5px;
     }
 
     .first_p {
@@ -632,6 +618,13 @@ main {
     .icon {
         bottom: 2px;
         left:5px
+    }
+
+    .suggestion_l,
+    .suggestion_m,
+    .suggestion_s,
+    .suggestion_xs {
+        width: 40%;
     }
 
     #resultats_activites_mobile h2 {
@@ -694,12 +687,12 @@ main {
     }
 
     #resultats_populaires article {
-        width: 350px;
+        width: 50%;
         height: 150px;
     }
 
     #resultats_populaires article img {
-        width: 130px;
+        width: 40%;
         height: 150px;
         border-radius: 20px 0 0 20px;
         float: left;
@@ -784,6 +777,14 @@ main {
         border-radius: 0;
     }
 
+    #resultats_populaires article {
+        width: 60%;
+    }
+
+    .icon {
+        left: 155px;
+    }
+
     #resultats_hebergements article {
         margin: 15px 0;
         width: 230px;
@@ -839,18 +840,12 @@ main {
         background-color: #f2f2f2;
     }
 
-    #populaires_container div {
-        width: 75%;
-        margin: 10px auto;
-        box-shadow: 0 0 10px lightgray;
+    #resultats_populaires article {
+        width: 85%;
     }
 
-    #populaires_container div img {
-        width: 35%;
-    }
-
-    #populaires_container div:hover {
-        box-shadow: 0 0 10px grey;
+    .icon {
+        left: 170px;
     }
 
     #resultats_hebergements h2, h3 {
