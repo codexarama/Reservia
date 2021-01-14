@@ -74,7 +74,7 @@ nav a:hover, a:active {
 }
 
 .inscription:hover, :active {
-    border-top: medium solid #0065fc;
+    border: none;
 }
 
 #navbar_mobile {
@@ -653,6 +653,10 @@ main {
 @media only screen and (max-width: 768px)  {
     .display_desktop {
         display: none;
+    }
+
+    .inscription:hover, :active {
+        border: none;
     }
 
     #bouton i {
