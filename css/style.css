@@ -461,7 +461,7 @@ main {
 
 /* large devices (landscape tablets and lap-desktops) */
 @media only screen and (max-width: 1440px)  {
-    #section_hebergements {
+    #hebergements {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -540,7 +540,7 @@ main {
         margin-bottom: 20px;
     }
 
-    #section_hebergements {
+    #hebergements {
         flex-direction: column-reverse;
     }
 
@@ -813,7 +813,7 @@ main {
 
 /* extra small devices (small smartphones) */
 @media only screen and (max-width: 480px) {
-    #section_hebergements {
+    #hebergements {
         display: flex;
         flex-direction: column-reverse;
     }
