@@ -461,8 +461,12 @@ main {
 
 /* large devices (landscape tablets and lap-desktops) */
 @media only screen and (max-width: 1400px)  {
-    #resultats_hebergements h2, h3 {
-        padding-left: 100px;
+    #resultats_hebergements article {
+        width: 28%;
+    }
+
+    #resultats_hebergements article img {
+        width: 100%;
     }
 
     #resultats_activites_desktop {
@@ -541,10 +545,6 @@ main {
         width: 25%;
         margin-right: 30px;
         margin-left: 30px;
-    }
-
-    #resultats_hebergements article img {
-        width: 100%;
     }
 
     #resultats_populaires {
