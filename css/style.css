@@ -452,7 +452,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 1780px) {
+@media only screen and (max-width: 1700px) {
     body {
         width: 100%;
         margin: auto;
@@ -460,34 +460,9 @@ main {
 }
 
 /* large devices (landscape tablets and lap-desktops) */
-@media only screen and (max-width: 1440px)  {
-    #hebergements {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-
-    #resultats_hebergements {
-        width: 95%;
-        margin: 50px auto 0 auto;
-    }
-
-    #resultats_hebergements article,
-    #resultats_hebergements article img {
-        width: 300px;
-    }
-
+@media only screen and (max-width: 1400px)  {
     #resultats_hebergements h2, h3 {
-        padding-left: 75px;
-    }
-
-    #resultats_populaires {
-        width: 95%;
-        margin: auto;
-    }
-
-    #resultats_populaires article {
-        width: 28%;
+        padding-left: 100px;
     }
 
     #resultats_activites_desktop {
@@ -559,7 +534,17 @@ main {
     }
 
     #resultats_hebergements h2, h3 {
-        padding-left: 50px;
+        padding-left: 125px;
+    }
+
+    #resultats_hebergements article {
+        width: 25%;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    #resultats_hebergements article img {
+        width: 100%;
     }
 
     #resultats_populaires {
@@ -582,8 +567,8 @@ main {
     }
 
     #resultats_populaires article {
-        width: 25%;
-        height: 250px;
+        width: 20%;
+        height: 265px;
         box-shadow: 0 0 5px whitesmoke;
     }
 
@@ -632,7 +617,7 @@ main {
     }
 
     #footer {
-        padding: 20px 30px;
+        padding: 20px 0 20px 30px;
         background-color: grey;
     }
 
@@ -680,6 +665,17 @@ main {
     .selection {
         margin: 10px 5px;
     }
+
+    #resultats_hebergements h2, h3 {
+        padding-left: 50px;
+    }
+
+    #resultats_hebergements article {
+        width: 40%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
 
     #resultats_populaires {
         flex-direction: column;
@@ -831,7 +827,7 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 75%;
+        width: 80%;
         margin: auto;
         color: black;
     }
@@ -893,9 +889,10 @@ main {
     }
 
     #footer {
-    display: block;
-    background-color: #f2f2f2;
-    font-size: medium;
+        display: block;
+        background-color: #f2f2f2;
+        font-size: medium;
+        padding-bottom: 10px;
     }
 
     .footer_info h2,
