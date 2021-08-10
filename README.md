@@ -1,20 +1,16 @@
 # Reservia
 
-<<<<<<< Updated upstream
 (projet fictif de formation)
 
 > CONTEXTE :
 
 Reservia est un outil de planification de vacances qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique et spécificités.
 
-> PROBLEMATIQUE
-=======
 ## CLIENT : Reservia
 
 L'outil de planification de vacances Reservia permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique (budget, ambiance) et par spécificités (animaux autorisés ou non)
 
 ## LIVRABLE
->>>>>>> Stashed changes
 
 Intégration responsive HTML + CSS du nouveau design de leur site Internet one page, basé sur les principes du Material Design
 
