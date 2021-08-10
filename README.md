@@ -6,7 +6,7 @@
 
 Reservia est un outil de planification de vacances qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique et spécificités.
 
-## CLIENT : Reservia
+## BESOIN
 
 L'outil de planification de vacances Reservia permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique (budget, ambiance) et par spécificités (animaux autorisés ou non)
 
@@ -16,10 +16,10 @@ Intégration responsive HTML + CSS du nouveau design de leur site Internet one p
 
 ## COMPETENCES DEVELOPPEES
 
--[x] Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
--[x] Mettre en place son environnement Front-End
--[x] Intégrer du contenu conformément à une maquette
--[x] Implémenter une interface responsive
+- [x] Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+- [x] Mettre en place son environnement Front-End
+- [x] Intégrer du contenu conformément à une maquette
+- [x] Implémenter une interface responsive
 
 ## RESSOURCES FOURNIES
 
