@@ -2,11 +2,11 @@
 
 (projet fictif de formation)
 
-> CONTEXTE :
+> CONTEXTE
 
 Reservia est un outil de planification de vacances qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique et spécificités.
 
-## BESOIN
+> BESOIN
 
 L'outil de planification de vacances Reservia permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique (budget, ambiance) et par spécificités (animaux autorisés ou non)
 
