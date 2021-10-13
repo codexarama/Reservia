@@ -1,6 +1,6 @@
 # Reservia
 
-(projet fictif de formation n°01/12 avec OpenClassroomms)
+(projet fictif de formation n°01/11 avec OpenClassroomms)
 
 > CONTEXTE
 
