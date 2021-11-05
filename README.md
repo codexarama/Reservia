@@ -1,6 +1,6 @@
 # Reservia
 
-(projet fictif de formation n°01/11 avec OpenClassroomms)
+(projet fictif de formation n°01/11 avec OpenClassrooms)
 
 > CONTEXTE
 
@@ -10,18 +10,18 @@ Reservia est un outil de planification de vacances qui permet aux usagers de tro
 
 L'outil de planification de vacances Reservia permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent être filtrés par thématique (budget, ambiance) et par spécificités (animaux autorisés ou non)
 
-## LIVRABLE
+## Livrable
 
 Intégration responsive HTML + CSS du nouveau design de leur site Internet one page, basé sur les principes du Material Design
 
-## COMPETENCES DEVELOPPEES
+## Compétences développées
 
 - [x] Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 - [x] Mettre en place son environnement Front-End
 - [x] Intégrer du contenu conformément à une maquette
 - [x] Implémenter une interface responsive
 
-## RESSOURCES FOURNIES
+## Ressources fournies
 
 > Images
 
@@ -34,7 +34,7 @@ Intégration responsive HTML + CSS du nouveau design de leur site Internet one p
 - font (Raleway)
 - couleurs (bleu #0065FC, bleu clair #DEEBFF, gris #F2F2F2)
 
-> COMPLÉMENTS A APPORTER
+> Compléments à apporter
 
 - constitution de la banque d'icones (issues de la bibliothèque Fontawesome)
 - adaptation de l'intégration aux tablettes
