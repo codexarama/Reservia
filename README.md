@@ -2,7 +2,7 @@
 
     Projet fictif de formation n°01/11 | OpenClassrooms
 
-![Home page](./Reservia.PNG)
+<kbd>![Home page](./Reservia.PNG)</kbd>
 
 > CONTEXTE
 
